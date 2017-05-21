@@ -1,0 +1,43 @@
+{
+    "name": "islandora/lameduck",
+    "description": "Lame as a web service",
+    "type": "project",
+    "require": {
+        "islandora/crayfish-commons": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Islandora Foundation",
+            "email": "community@islandora.ca",
+            "role": "Owner"
+        },
+        {
+            "name": "Nick Ruest",
+            "email": "ruestn@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Islandora\\Lameduck\\": "src/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "phpcs --standard=PSR2 src tests",
+            "phpcpd --names *.php src"
+        ],
+        "test": [
+            "@check",
+            "phpunit"
+        ]
+    },
+    "require-dev": {
+        "symfony/browser-kit": "^3.0",
+        "symfony/css-selector": "^3.0",
+        "phpunit/phpunit": "^5.0",
+        "squizlabs/php_codesniffer": "^2.0",
+        "sebastian/phpcpd": "^3.0"
+    }
+}
