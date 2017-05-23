@@ -13,7 +13,7 @@
 - Install `composer`. [Install instructions here.][4]
 - `$ cd /path/to/Lameduck` and run `$ composer install`
 - Then either
- - For production, configure your web server appropriately (e.g. add a VirtualHost for Lameduck in Apache) some documentation (here)[http://silex.sensiolabs.org/doc/2.0/web_servers.html].
+ - For production, configure your web server appropriately (e.g. add a VirtualHost for Lameduck in Apache) some documentation [here](http://silex.sensiolabs.org/doc/2.0/web_servers.html).
  - For development, run the PHP built-in webserver `$ php -S localhost:8888 -t src` from Lameduck root.
 
 ### Apache2
