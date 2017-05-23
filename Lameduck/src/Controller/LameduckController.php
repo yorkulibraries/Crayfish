@@ -80,7 +80,7 @@ class LameduckController
         $this->log->debug("X-Islandora-Args:", ['args' => $args]);
 
         // Build arguments
-        $cmd_string = "{$this->executable} {$args} - -";
+        $cmd_string = "$this->executable $args - -";
         $this->log->info('Lame Command:', ['cmd' => $cmd_string]);
 
         // Return response.

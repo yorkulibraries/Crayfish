@@ -1,4 +1,4 @@
-# ![image](https://cloud.githubusercontent.com/assets/2371345/24111014/dbc65c56-0d73-11e7-91f0-06af315f78a8.png) Lameduck
+# ![image](https://cloud.githubusercontent.com/assets/2371345/26328990/8e172fec-3f1b-11e7-897d-ceddc1875f84.png) Lameduck
 [![Contribution Guidelines][2]](./CONTRIBUTING.md)
 [![LICENSE][3]](./LICENSE)
 
@@ -45,14 +45,14 @@ In order to work on larger audio files, be sure `post_max_size` is sufficiently 
 
 ## Usage
 
-Lameduck only accepts one request, a `GET` containing the path a WAV or FLAC in Fedora.
+Lameduck only accepts one request, a `GET` containing the path a WAV in Fedora.
 
-For example, suppose if you have a WAV or FLAC in Fedora at `http://localhost:8080/fcrepo/rest/foo/bar`. If running the PHP built-in server command described in the Installation section:
+For example, suppose if you have a WAV in Fedora at `http://localhost:8080/fcrepo/rest/foo/bar`. If running the PHP built-in server command described in the Installation section:
 ```
 $ curl -H "Authorization: Bearer islandora" "localhost:8888/foo/bar"
 ```
 
-This will return an MP3 generated from the WAV or FLAC in Fedora. Additional arguments to `lame` can be provided using the `X-Islandora-Args` header. For example, to change the quality:
+This will return an MP3 generated from the WAV in Fedora. Additional arguments to `lame` can be provided using the `X-Islandora-Args` header. For example, to change the quality:
 ```
 $ curl -H "Authorization: Bearer islandora" -H "X-Islandora-Args: -q 0" "localhost:8888/foo/bar"
 ```
